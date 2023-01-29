@@ -8,7 +8,6 @@ from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neural_network import MLPClassifier
 
-# train이랑 test 랑 분리하기 - 에이지 그룹 트레인 테스트할때 더 쉽게하기위해
 def SVM_train(train_set2, train_set_label2):
     # gridsearch for the best parameters in SVM
     param_grid = {'C': [0.1, 1, 10, 100], 'gamma': [1, 0.1, 0.01, 0.001, 10]}
